@@ -8,7 +8,7 @@
             </div>
             <p class="w-fit text-xs md:text-sm break-words pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur velit veniam nam esse! Sed, recusandae eius voluptatibus nobis delectus voluptatem cumque. Nisi illo animi hic sit magnam incidunt voluptas similique?</p>
         </div>
-        <img src="https://picsum.photos/id/124/1920/1080/?grayscale=1.webp" alt="" class="h-full w-full object-cover absolute">
+        <img src="/assets/Eye.JPG" alt="" class="h-full w-full object-cover absolute">
 
         <div class="custom-shape-divider-bottom-1686542073">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
