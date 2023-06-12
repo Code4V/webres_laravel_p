@@ -10,4 +10,4 @@
     <script src="https://kit.fontawesome.com/7846b9013f.js" crossorigin="anonymous"></script>
 
 </head>
-<body class="bg-slate-100 font-red text-base">
+<body class="bg-slate-100 font-red text-base snap-y snap-mandatory ">
