@@ -8,7 +8,7 @@
             </div>
             <p class="w-fit text-xs md:text-sm break-words pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur velit veniam nam esse! Sed, recusandae eius voluptatibus nobis delectus voluptatem cumque. Nisi illo animi hic sit magnam incidunt voluptas similique?</p>
         </div>
-        <img src="/assets/Eye.JPG" alt="" class="h-full w-full object-cover absolute">
+        <img src="/assets/Eye.JPG" alt="" class="h-full w-full object-cover absolute grayscale object-center">
 
         <div class="custom-shape-divider-bottom-1686542073">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -101,7 +101,7 @@
                     <h4 class="text-2xl">LAKBAY SA BAYAN</h4>
                     <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consectetur dolores id quo mollitia repellat consequatur nemo in ab sint ducimus asperiores atque aliquam vero qui, expedita quaerat, corporis distinctio.</p>
                     <a href="https://www.lakbaysabayan.com" target="_blank">
-                        <button class="bg-orange-500 h-7 w-24 rounded-md text-white transition-colors uppercase text-xs hover:bg-orange-600 after:content-['\00a0>'] ">Go to site</button>
+                        <button class="bg-orange-500 h-7 w-24 rounded-md text-white transition-colors duration-500 uppercase text-xs hover:bg-orange-600 after:content-['\00a0>'] ">Go to site</button>
                     </a>
                 </div>
                 <div class="w-full sm:w-[30%] order-first sm:order-none">
@@ -117,7 +117,7 @@
                     <h4 class="text-2xl">EIRA UNIVERSITY</h4>
                     <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consectetur dolores id quo mollitia repellat consequatur nemo in ab sint ducimus asperiores atque aliquam vero qui, expedita quaerat, corporis distinctio.</p>
                     <a href="https://www.lakbaysabayan.com" target="_blank">
-                        <button class="bg-orange-500 h-7 w-24 rounded-md text-white transition-colors uppercase text-xs hover:bg-orange-600 after:content-['\00a0>'] ">Go to site</button>
+                        <button class="bg-orange-500 h-7 w-24 rounded-md text-white transition-colors duration-500 uppercase text-xs hover:bg-orange-600 after:content-['\00a0>'] ">Go to site</button>
                     </a>
                 </div>
                 <div class="w-full sm:w-[30%] order-first sm:order-none">
