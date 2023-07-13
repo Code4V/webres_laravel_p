@@ -1,23 +1,28 @@
 @include('partials.__header', ['title' => 'Code4V'])
-    <x-navigation add='#' />
+    <x-navigation indexlocation='#' />
 
     <header class="flex relative min-w-screen min-h-[50svh] z-10 justify-center items-center snap-top ">
-        <div class="absolute align-middle content-center mx-2 lg:h-auto lg:bottom-auto lg:mx-0 text-white lg:left-48 pb-2 px-2 md:px-6 border-orange-300 rounded-md hover:bg-orange-500 hover:text-gray-900 transition w-auto md:w-112 lg:w-164 shadow-md hover:shadow-orange-700/90 z-10 backdrop-blur-lg ">
-            <div class="relative w-fit">
-                <h1 class="text-7xl md:text-8xl lg:text-9xl font-extrabold after:content-['Jeanne\00a0''Francis'] after:absolute after:-bottom-3 xl:after:-bottom-2 after:right-0 after:text-base  after:w-auto" >RIVAS</h1>
+        <div class="flex flex-col md:flex-row absolute align-middle content-center border-orange-300 rounded-md  shadow-md z-10 backdrop-blur-lg h-5/6 md:min-h-[80%] md:max-w-5xl group sm:order-none cursor-default mx-5">
+            <div class="relative w-full md:w-[50%] p-6">
+                <div class="relative">
+                    <h1 class="text-7xl md:text-8xl lg:text-9xl font-extrabold after:content-['Jeanne\00a0''Francis'] after:relative   after:text-base group-hover:text-orange-500 after:w-auto after:block after:leading-none transition" >RIVAS</h1>
+                </div>
+                <p class="w-fit text-xs md:text-sm break-words pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur velit veniam nam esse! Sed, recusandae eius voluptatibus nobis delectus voluptatem cumque. Nisi illo animi hic sit magnam incidunt voluptas similique?</p>
             </div>
-            <p class="w-fit text-xs md:text-sm break-words pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur velit veniam nam esse! Sed, recusandae eius voluptatibus nobis delectus voluptatem cumque. Nisi illo animi hic sit magnam incidunt voluptas similique?</p>
+            
+            <div class="relative w-full md:w-[50%] h-full object-cover overflow-hidden rounded-t-md md:rounded-e-md md:rounded-s-none order-first md:order-none">
+                <img src="/assets/HeadMe.JPG" alt="" class="h-full w-full object-cover absolute grayscale object-center transition-all duration-500 group-hover:scale-110 colored group-hover:grayscale-0 ">
+            </div>
         </div>
-        <img src="/assets/Eye.JPG" alt="" class="h-full w-full object-cover absolute grayscale object-center">
 
-        <div class="custom-shape-divider-bottom-1686542073">
+        <!-- <div class="custom-shape-divider-bottom-1686542073">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="fill-slate-100"></path>
             </svg>
-        </div>
+        </div> -->
     </header>
     
-    <main class="relative min-h-full mx-2 sm:mx-20 md:mx-20 lg:mx-30 xl:mx-60 2xl:mx-112 mt-12 px-8 outline outline-1 outline-green-400 snap-center">
+    <main class="flex flex-col relative min-h-full  mt-12 snap-center md:max-w-5xl justify-center mx-auto">
 
         <section class="min-h-126 pt-32 snap-top" id="skills">
             <span class="text-3xl font-extrabold">SKILLS</span>
@@ -116,7 +121,7 @@
                 <div class="w-full pt-2 sm:w-[70%]">
                     <h4 class="text-2xl">EIRA UNIVERSITY</h4>
                     <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consectetur dolores id quo mollitia repellat consequatur nemo in ab sint ducimus asperiores atque aliquam vero qui, expedita quaerat, corporis distinctio.</p>
-                    <a href="https://www.lakbaysabayan.com" target="_blank">
+                    <a href="https://eira.erovoutika.ph" target="_blank">
                         <button class="bg-orange-500 h-7 w-24 rounded-md text-white transition-colors duration-500 uppercase text-xs hover:bg-orange-600 after:content-['\00a0>'] ">Go to site</button>
                     </a>
                 </div>

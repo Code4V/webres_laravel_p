@@ -1,5 +1,5 @@
 @include('partials.__header', ['title' => "Contact Me"])
 
-<x-navigation add='/' />
+<x-navigation indexlocation='/' />
 
 @include('partials.__footer')

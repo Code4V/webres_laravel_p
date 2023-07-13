@@ -20,7 +20,8 @@ module.exports = {
       }
     },
     fontFamily: {
-      'red': ['Red Hat Display', 'sans-serif']
+      'red': ['Red Hat Display', 'sans-serif'],
+      'pops': ['Poppins']
     },
   },
   plugins: [],
