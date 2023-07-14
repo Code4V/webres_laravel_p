@@ -16,7 +16,9 @@ module.exports = {
       transitionProperty: {
         'width': 'width',
         'basis': 'flex-basis'
-
+      },
+      transitionTimingFunction: {
+        'in-out-sudden': 'cubic-bezier(.68,-0.55,.27,1.55)'
       }
     },
     fontFamily: {
