@@ -26,6 +26,6 @@ module.exports = {
       'pops': ['Poppins']
     },
   },
-  plugins: [],
+  plugins: []
 }
 

@@ -27,76 +27,22 @@
         <section class="min-h-126 snap-top mx-5" id="skills">
             <p class="w-full"><span class="block text-2xl font-extrabold  mx-auto w-fit">SKILLS</span></p>
             <div class="grid md:grid-cols-3 gap-3 p-2 h-fill min-h-16">
-
-                <div class="md:col-span-2 md:row-span-2 h-112 flex flex-col border-2 border-spacing-1 p-5 rounded-md flex-wrap">
+                @php 
+                    $front_end = [
+                                    ["skillName"=>"html","skillPercent"=>85, "skillIcon"=>"fa-html5"],
+                                    ["skillName"=>"css","skillPercent"=>90, "skillIcon"=>"fa-css3-alt"],
+                                    ["skillName"=>"javascript","skillPercent"=>65, "skillIcon"=>"fa-square-js"]
+                                 ];
+                @endphp 
+                <div class="md:col-span-2 md:row-span-2 h-fill flex flex-col border-2 border-spacing-1 p-5 rounded-md flex-wrap">
                     <h4 class="font-semibold">FRONT END</h4>
                     <div class="flex flex-col md:flex-row place-content-center w-full my-2 flex-nowrap md:flex-wrap gap-5">
-                        <div class="md-grow md:basis-1/3 flex group/icon flex-row mx-3">
-                            <i class="fa-brands fa-html5 fa-5x scale-50 sm:scale-100 hover:text-orange-500 hover:rotate-12  hover:scale-90 ease-in-out-sudden duration-500 transition-all"></i>
-                            <div class="ps-3 w-full">
-                                <span class="block relative">
-                                    HTML
-                                </span>
-                                <div class="flex">         
-                                    <span class="font-medium text-4xl">
-                                        80%
-                                    </span>
-                                    <div class="ms-1 place-self-end">         
-                                        <span class="font-medium text-base">
-                                            Proficient
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700/25">
-                                    <div class="bg-orange-500 h-1.5 rounded-full" style="width: 80%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="md-grow md:basis-1/3 flex flex-row mx-3">
-                            <i class="fa-brands fa-css3-alt fa-5x scale-50 sm:scale-100  hover:text-orange-500 hover:rotate-12  hover:scale-90 ease-in-out-sudden duration-500 transition-all group"></i>
-                            <div class="ps-3 w-full">
-                                <span class="block relative">
-                                    CSS
-                                </span>
-                                <div class="flex">         
-                                    <span class="font-medium text-4xl">
-                                        90%
-                                    </span>
-                                    <div class="ms-1 place-self-end">         
-                                        <span class="font-medium text-base">
-                                            Proficient
-                                        </span>
-                                        
-                                    </div>
-                                </div>
-                                <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700/25">
-                                    <div class="bg-orange-500 w-[90%] h-1.5 rounded-full"></div>
-                                 </div>
-                            </div>
-                        </div>
-                        <div class="md-grow md:basis-1/3 flex flex-row mx-3">
-                            <i class="fa-brands fa-square-js fa-5x scale-50 sm:scale-100 hover:text-orange-500 hover:rotate-12  hover:scale-90 ease-in-out-sudden duration-500 transition-all group"></i>
-                            <div class="ps-3 w-full">
-                                <span class="block relative">
-                                    JAVASCRIPT
-                                </span>
-                                <div class="flex">         
-                                    <span class="font-medium text-4xl">
-                                        65%
-                                    </span>
-                                    <div class="ms-1 place-self-end">         
-                                        <span class="font-medium text-base">
-                                            Proficient
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700/25">
-                                    <div class="bg-orange-500 h-1.5 rounded-full" style="width: 65%"></div>
-                                </div>
-                            </div>
-                        </div>
+                        @foreach ($front_end as $subkey => $subvalue)
+                        <x-skill skillName="{{ $subvalue['skillName'] }}" skillPercent="{{ $subvalue['skillPercent'] }}" skillIcon="{{ $subvalue['skillIcon'] }}"/>
+                        @endforeach
                     </div>
                 </div>
+                
 
                 <div class="flex flex-col md:row-span-2 border-2 border-spacing-1 p-5 rounded-md">
                     <h4 class="font-semibold">DEV OPS</h4>
@@ -218,9 +164,16 @@
                 </div>
 
                 
+            </div>
+            </div>
 
-            </div>
-            </div>
+            <script>
+                const proficiencyBars = document.querySelectorAll(".w-full .bg-gray-200 .rounded-full")
+
+
+
+
+            </script>
         </section>
 
         <section class="min-h-fit pt-32 snap-center mx-5" id="works">
