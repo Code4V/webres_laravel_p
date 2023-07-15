@@ -11,10 +11,10 @@
         </div>
         
     </div>
-    <div class="w-full sm:w-[30%] order-first sm:order-none ms-2">
+    <div class="w-full sm:w-[30%] order-first sm:order-none ms-2 ">
         <picture>
             <source media="(min-width: 640px)" srcset="assets/{{ $workImage['large_screen'] }}">
-            <img src="/assets/{{ $workImage['small_screen'] }}" alt="" class="object-fill w-full rounded-xl grayscale">
+            <img src="/assets/{{ $workImage['small_screen'] }}" alt="" class="object-fill w-full rounded-xl grayscale bg-orange-500/10">
         </picture>
     </div>
 </div>
