@@ -12,7 +12,7 @@
             </span>
             <div class="ms-1 place-self-end transition-all duration-300 delay-300 ease-in-out group-hover/skill:-translate-x-16">         
                 <span class="font-normal text-base">
-                    Proficient
+                    Proficiency
                 </span>
                 
             </div>

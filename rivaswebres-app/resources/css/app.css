@@ -8,6 +8,8 @@
 * {
     /* outline: solid 1px green; */
     @apply focus:outline-none focus:ring-2 focus:ring-orange-500 focus:rounded-md outline-1;
+
+    scroll-behavior: smooth;
 }
 
 .custom-shape-divider-bottom-1686542073 {
