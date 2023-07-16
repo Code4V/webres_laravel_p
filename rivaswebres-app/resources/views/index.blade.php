@@ -4,8 +4,9 @@
     $front_end = [
                     ["skillName"=>"html","skillPercent"=>85, "skillIcon"=>"fa-html5"],
                     ["skillName"=>"css","skillPercent"=>90, "skillIcon"=>"fa-css3-alt"],
-                    ["skillName"=>"javascript","skillPercent"=>65, "skillIcon"=>"fa-square-js"]
-                    ];
+                    ["skillName"=>"javascript","skillPercent"=>65, "skillIcon"=>"fa-square-js"],
+                    ["skillName"=>"wordpress","skillPercent"=>80, "skillIcon"=>"fa-wordpress"],
+                ];
                     
     $back_end = [
                     ["skillName"=>"php","skillPercent"=>85, "skillIcon"=>"fa-php"],
@@ -18,14 +19,23 @@
                     ["skillName"=>"slack","skillPercent"=>100, "skillIcon"=>"fa-slack"],
                 ];
 
+    $learning = [
+                    ["skillName"=>"laravel","skillPercent"=>35, "skillIcon"=>"fa-laravel"],
+                    ["skillName"=>"react","skillPercent"=>30, "skillIcon"=>"fa-react"],
+                    ["skillName"=>"docker","skillPercent"=>25, "skillIcon"=>"fa-docker"],
+                    ["skillName"=>"mongodb","skillPercent"=>40, "skillIcon"=>"fa-envira"],
+                ];
+
+
     $works = [
-                ["workTitle" => "Lakbay sa Bayan", 
+                [   "workTitle" => "Lakbay sa Bayan", 
                     "workDescription" => "A website for Travel Agencies to post their package with instead of solely relying on Facebook to share their packages",
                     "workImage" => [
                                     "large_screen" => "Lakbay_Logo.webp",
                                     "small_screen" => "Lakbay.webp"
                                 ],
-                    "workLink" => "https://www.lakbaysabayan.com"
+                    "workLink" => "https://www.lakbaysabayan.com",
+                    "workCategory" => ["PHP", "JS"]
 
                 ], 
                 [
@@ -35,9 +45,10 @@
                                     "large_screen" => "Eira_Logo.webp",
                                     "small_screen" => "Eira.webp"
                                 ],
-                    "workLink" => "https://eira.erovoutika.ph"
+                    "workLink" => "https://eira.erovoutika.ph",
+                    "workCategory" => ["PHP", "RUBY"]
                 ],
-                ]; 
+             ]; 
 @endphp 
 
 <x-navigation indexlocation='#' />
@@ -91,6 +102,15 @@
                 </div>
             </div>
 
+            <div class="md:col-span-3 flex flex-col border-2 border-spacing-1 p-5 rounded-md border-orange-200">
+                <h4 class="font-semibold">CURRENTLY LEARNING</h4>
+                <div class="flex flex-col md:flex-row place-content-center w-full my-2 gap-5 flex-nowrap md:flex-wrap">
+                    @foreach ($learning as $subkey => $subvalue)
+                    <x-skill :skillName=" $subvalue['skillName'] " :skillPercent=" $subvalue['skillPercent'] " :skillIcon=" $subvalue['skillIcon'] "/>
+                    @endforeach
+                </div>
+            </div>
+
         </div>
         </div>
 
@@ -104,7 +124,7 @@
         
         <div class="grid md:grid-cols-2 gap-3">
             @foreach ($works as $key => $work)
-                <x-work :workTitle="$work['workTitle']" :workDescription="$work['workDescription']" :workImage="$work['workImage']" :workLink="$work['workLink']"/>
+                <x-work :workTitle="$work['workTitle']" :workDescription="$work['workDescription']" :workImage="$work['workImage']" :workLink="$work['workLink']" :workCategory="$work['workCategory']"/>
             @endforeach
         </div>
 

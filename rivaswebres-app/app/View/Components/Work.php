@@ -15,7 +15,8 @@ class Work extends Component
         public string $workTitle,
         public string $workDescription,
         public array $workImage = [],
-        public string $workLink
+        public string $workLink,
+        public ?array $workCategory = []
     )
     {
         //
