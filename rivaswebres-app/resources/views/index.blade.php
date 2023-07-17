@@ -63,7 +63,7 @@
         </div>
         
         <div class="basis-1/2 relative w-full md:w-1/2 h-full object-cover overflow-hidden rounded-t-md md:rounded-e-md md:rounded-s-none  mt-6">
-            <img src="/assets/HeadMe.JPG" alt="" class="h-full md:h-1/2 w-full object-cover grayscale object-center transition-all duration-500 group-hover:scale-110 colored group-hover:grayscale-0 ">
+            <img src="/assets/HeadMe.webp" alt="" class="h-full md:h-1/2 w-full object-cover grayscale object-center transition-all duration-500 group-hover:scale-110 colored group-hover:grayscale-0 ">
         </div>
     </div>
 </header>
@@ -72,7 +72,7 @@
 
     <section class="min-h-126 pt-28 snap-top mx-5" id="skills">
         <p class="w-full"><span class="block text-2xl font-extrabold mx-auto w-fit my-5">SKILLS</span></p>
-        <div class="grid md:grid-cols-3 gap-3 px-2 h-fill min-h-16">
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-3 px-2 h-fill min-h-16">
             
             <div class="md:col-span-2 md:row-span-2 h-fill flex flex-col border-2 border-spacing-1 p-5 rounded-md flex-wrap overflow-hidden">
                 <h4 class="font-semibold">FRONT-END</h4>
@@ -84,7 +84,7 @@
             </div>
             
 
-            <div class="flex flex-col md:row-span-2 border-2 border-spacing-1 p-5 rounded-md overflow-hidden">
+            <div class="flex flex-col row-span-1 md:row-span-3 lg:row-span-2  border-2 border-spacing-1 p-5 rounded-md overflow-hidden">
                 <h4 class="font-semibold">DEV OPS</h4>
                 <div class="flex flex-col md:flex-row place-content-center w-full my-2 flex-nowrap md:flex-wrap gap-5">
                     @foreach ($dev_ops as $subkey => $subvalue)
@@ -93,9 +93,9 @@
                 </div>
             </div>
 
-            <div class="md:col-span-3 flex flex-col border-2 border-spacing-1 p-5 rounded-md">
+            <div class="col-span-1 md:col-span-2 lg:col-span-3 flex flex-col border-2 border-spacing-1 p-5 rounded-md">
                 <h4 class="font-semibold">BACK-END</h4>
-                <div class="flex flex-col md:flex-row place-content-center w-full my-2 gap-5 flex-nowrap md:flex-wrap">
+                <div class="flex flex-col lg:flex-row place-content-center w-full my-2 gap-5 flex-nowrap lg:flex-wrap">
                     @foreach ($back_end as $subkey => $subvalue)
                     <x-skill :skillName=" $subvalue['skillName'] " :skillPercent=" $subvalue['skillPercent'] " :skillIcon=" $subvalue['skillIcon'] "/>
                     @endforeach

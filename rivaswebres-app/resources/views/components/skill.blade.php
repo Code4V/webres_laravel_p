@@ -1,5 +1,8 @@
-<div class="md-grow md:basis-1/3 flex flex-row mx-3 group/skill">
-    <i class="fa-brands {{ $skillIcon }} fa-5x scale-50 sm:scale-100 group-hover/skill:text-orange-500 group-hover/skill:rotate-12  group-hover/skill:scale-90 ease-in-out-sudden duration-500 transition-all group/skill"></i>
+<div class="md-grow md:basis-1/8 lg:basis-1/3 flex flex-row mx-3 group/skill">
+    
+    <div class="w-16 max-w-lg text-center">
+        <i class="fa-brands {{ $skillIcon }}  scale-75 sm:scale-100 group-hover/skill:text-orange-500 group-hover/skill:rotate-12  group-hover/skill:scale-90 ease-in-out-sudden duration-500 transition-all group/skill max-w-max text-5xl "></i>
+    </div>
     <div class="ps-3 w-full group/skill">
         <span class="font-medium block relative uppercase">
             {{ $skillName }}

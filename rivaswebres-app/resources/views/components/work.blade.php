@@ -18,7 +18,7 @@
             
             @endforeach
         </div>
-        <div class="grow">  
+        <div class="grow mt-2">  
             <h4 class="text-2xl font-medium"> {{ $workTitle }} </h4>
             <p class="mb-5 leading-tight">{{ $workDescription }}</p>
         </div>
