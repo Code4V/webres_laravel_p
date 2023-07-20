@@ -13,4 +13,4 @@
     <script src="https://kit.fontawesome.com/7846b9013f.js" crossorigin="anonymous"></script>
 
 </head>
-<body class="bg-slate-100 font-pops text-base snap-y snap-mandatory scroll">
+<body class="text-base bg-slate-100 font-pops snap-y snap-mandatory scroll">

@@ -7,7 +7,7 @@
                            ];
 @endphp
 
-<div class="w-full flex flex-col sm:flex-row px-5 py-3 mt-2 rounded-md border-2">
+<div class="flex flex-col w-full px-5 py-3 mt-2 border-2 rounded-md sm:flex-row">
     <div class="w-full flex flex-col sm:w-[70%] relative justify-between">
         <div class="flex mt-2 sm:mt-0">
             @foreach ($workCategory as $categories)
@@ -18,7 +18,7 @@
             
             @endforeach
         </div>
-        <div class="grow mt-2">  
+        <div class="mt-2 grow">  
             <h4 class="text-2xl font-medium text-orange-500"> {{ $workTitle }} </h4>
             <p class="mb-5 leading-tight">{{ $workDescription }}</p>
         </div>

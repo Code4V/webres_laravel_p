@@ -55,57 +55,57 @@
 <x-navigation indexlocation='#' />
 
 <header class="flex relative min-w-screen max-h-[120svh] z-10 justify-center items-center snap-top">
-    <div class="flex flex-col-reverse md:flex-row relative align-middle content-center border-orange-300 z-10 backdrop-blur-lg md:min-h-[80%] group sm:order-none cursor-default mx-7">
+    <div class="flex flex-col-reverse md:flex-row relative align-middle content-center border-orange-300 z-10 md:min-h-[80%] group sm:order-none cursor-default mx-7">
         <div class="basis-1/2 block sticky top-14 w-full md:w-[50%] h-fit md:p-6">
             <div class="">
-                <h1 class="text-7xl lg:text-8xl xl:text-9xl font-extrabold group-hover:text-orange-500 transition uppercase">Jeanne Francis Rivas</h1>
+                <h1 class="font-extrabold uppercase transition text-7xl lg:text-8xl xl:text-9xl group-hover:text-orange-500">Jeanne Francis Rivas</h1>
             </div>
-            <p class="w-fit text-sm break-words pt-2">Programmer • Developer • Troubleshooter • IT</p>
+            <p class="pt-2 text-base break-words w-fit"> IT • Programmer • Developer • Troubleshooter • Learner • </p>
         </div>
         
-        <div class="basis-1/2 relative w-full md:w-1/2 h-full object-cover overflow-hidden rounded-t-md md:rounded-e-md md:rounded-s-none  mt-6">
-            <img src="/assets/HeadMe.webp" alt="" class="h-full md:h-1/2 w-full object-cover grayscale object-center transition-all duration-500 group-hover:scale-110 colored group-hover:grayscale-0 ">
+        <div class="relative object-cover w-full h-full mt-6 overflow-hidden basis-1/2 md:w-1/2 rounded-t-md md:rounded-e-md md:rounded-s-none">
+            <img src="/assets/HeadMe.webp" alt="" class="object-cover object-center w-full h-full transition-all duration-500 md:h-1/2 grayscale group-hover:scale-110 colored group-hover:grayscale-0 ">
         </div>
     </div>
 </header>
 
-<main class="flex flex-col relative min-h-full mt-12 snap-center md:max-w-5xl justify-center mx-auto ">
+<main class="relative flex flex-col justify-center min-h-full mx-auto mt-12 snap-center md:max-w-5xl ">
 
-    <section class="min-h-126 pt-28 snap-top mx-5" id="skills">
-        <p class="w-full"><span class="block text-2xl font-extrabold mx-auto w-fit my-5">SKILLS</span></p>
-        <div class="w-auto overflow-hidden overflow-x-scroll sm:overflow-x-hidden pb-4 snap-x">
+    <section class="mx-5 min-h-126 pt-28 snap-top" id="skills">
+        <p class="w-full"><span class="block mx-auto my-5 text-2xl font-extrabold w-fit">SKILLS</span></p>
+        <div class="w-auto pb-4 overflow-hidden overflow-x-scroll scroll sm:overflow-x-hidden snap-x ">
             <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-3 px-2 h-fill min-h-16 grid-cols-4 w-[96rem] sm:w-auto">
 
-                <div class="md:col-span-2 md:row-span-2 h-fill flex flex-col border-2 border-spacing-1 p-5 rounded-md flex-wrap overflow-hidden snap-center">
+                <div class="flex flex-col flex-wrap p-5 overflow-hidden border-2 rounded-md md:col-span-2 md:row-span-2 h-fill border-spacing-1 snap-center">
                     <h4 class="font-semibold">FRONT-END</h4>
-                    <div class="flex flex-col md:flex-row place-content-center w-full my-2 flex-nowrap md:flex-wrap gap-5">
+                    <div class="flex flex-col w-full gap-5 my-2 md:flex-row place-content-center flex-nowrap md:flex-wrap">
                         @foreach ($front_end as $subkey => $subvalue)
                         <x-skill :skillName="$subvalue['skillName']" :skillPercent="$subvalue['skillPercent']" :skillIcon="$subvalue['skillIcon']"/>
                         @endforeach
                     </div>
                 </div>
             
-                <div class="flex flex-col row-span-1 md:row-span-3 lg:row-span-2  border-2 border-spacing-1 p-5 rounded-md overflow-hidden snap-center"">
+                <div class="flex flex-col row-span-1 p-5 overflow-hidden border-2 rounded-md md:row-span-3 lg:row-span-2 border-spacing-1 snap-center"">
                     <h4 class="font-semibold">DEV OPS</h4>
-                    <div class="flex flex-col md:flex-row place-content-center w-full my-2 flex-nowrap md:flex-wrap gap-5">
+                    <div class="flex flex-col w-full gap-5 my-2 md:flex-row place-content-center flex-nowrap md:flex-wrap">
                         @foreach ($dev_ops as $subkey => $subvalue)
                         <x-skill :skillName=" $subvalue['skillName'] " :skillPercent=" $subvalue['skillPercent'] " :skillIcon=" $subvalue['skillIcon'] "/>
                         @endforeach
                     </div>
                 </div>
 
-                <div class="col-span-1 md:col-span-2 lg:col-span-3 flex flex-col border-2 border-spacing-1 p-5 rounded-md snap-center"">
+                <div class="flex flex-col col-span-1 p-5 border-2 rounded-md md:col-span-2 lg:col-span-3 border-spacing-1 snap-center"">
                     <h4 class="font-semibold">BACK-END</h4>
-                    <div class="flex flex-col lg:flex-row place-content-center w-full my-2 gap-5 flex-nowrap lg:flex-wrap">
+                    <div class="flex flex-col w-full gap-5 my-2 lg:flex-row place-content-center flex-nowrap lg:flex-wrap">
                         @foreach ($back_end as $subkey => $subvalue)
                         <x-skill :skillName=" $subvalue['skillName'] " :skillPercent=" $subvalue['skillPercent'] " :skillIcon=" $subvalue['skillIcon'] "/>
                         @endforeach
                     </div>
                 </div>
                 
-                <div class="md:col-span-3 flex flex-col border-2 border-spacing-1 p-5 rounded-md border-orange-200 snap-center"" >
+                <div class="flex flex-col p-5 border-2 border-orange-200 rounded-md md:col-span-3 border-spacing-1 snap-center"" >
                     <h4 class="font-semibold">CURRENTLY LEARNING</h4>
-                    <div class="flex flex-col md:flex-row place-content-center w-full my-2 gap-5 flex-nowrap md:flex-wrap">
+                    <div class="flex flex-col w-full gap-5 my-2 md:flex-row place-content-center flex-nowrap md:flex-wrap">
                         @foreach ($learning as $subkey => $subvalue)
                         <x-skill :skillName=" $subvalue['skillName'] " :skillPercent=" $subvalue['skillPercent'] " :skillIcon=" $subvalue['skillIcon'] "/>
                         @endforeach
@@ -119,10 +119,10 @@
         </script>
     </section>
 
-    <section class="min-h-fit pt-28 snap-center mx-5" id="works">
-        <p class="w-full"><span class="block text-2xl font-extrabold mx-auto w-fit my-5">PROJECTS INVOLVED</span></p>
+    <section class="mx-5 min-h-fit pt-28 snap-center" id="works">
+        <p class="w-full"><span class="block mx-auto my-5 text-2xl font-extrabold w-fit">PROJECTS INVOLVED</span></p>
         
-        <div class="grid md:grid-cols-2 gap-3">
+        <div class="grid gap-3 md:grid-cols-2">
             @foreach ($works as $key => $work)
                 <x-work :workTitle="$work['workTitle']" :workDescription="$work['workDescription']" :workImage="$work['workImage']" :workLink="$work['workLink']" :workCategory="$work['workCategory']"/>
             @endforeach
@@ -130,7 +130,7 @@
 
     </section>
 
-    <section class="min-h-screen pt-28 snap-center mx-5" id="social">
+    <section class="min-h-screen mx-5 pt-28 snap-center" id="social">
         <span class="text-2xl font-extrabold">MY SOCIAL</span>
     </section>
 </main>
