@@ -17,6 +17,7 @@
     $dev_ops = [
                     ["skillName"=>"git","skillPercent"=>80, "skillIcon"=>"fa-git-alt"],
                     ["skillName"=>"slack","skillPercent"=>100, "skillIcon"=>"fa-slack"],
+                    ["skillName"=>"discord","skillPercent"=>100, "skillIcon"=>"fa-discord"],
                 ];
 
     $learning = [
@@ -59,7 +60,7 @@
             <div class="">
                 <h1 class="text-7xl lg:text-8xl xl:text-9xl font-extrabold group-hover:text-orange-500 transition uppercase">Jeanne Francis Rivas</h1>
             </div>
-            <p class="w-fit text-sm break-words pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur velit veniam nam esse! Sed, recusandae eius voluptatibus nobis delectus voluptatem cumque. Nisi illo animi hic sit magnam incidunt voluptas similique?</p>
+            <p class="w-fit text-sm break-words pt-2">Programmer • Developer • Troubleshooter • IT</p>
         </div>
         
         <div class="basis-1/2 relative w-full md:w-1/2 h-full object-cover overflow-hidden rounded-t-md md:rounded-e-md md:rounded-s-none  mt-6">
