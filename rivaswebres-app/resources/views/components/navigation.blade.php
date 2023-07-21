@@ -1,4 +1,4 @@
-<nav class="sticky top-0 z-20 hidden w-full h-screen transition-all duration-300 delay-150 shadow-md opacity-0 hover:shadow-xl md:h-20 bg-slate-200/50 md:block md:opacity-100 backdrop-blur-md" id="nav-bar">
+<nav class="fixed top-0 z-20 hidden w-full h-screen transition-all duration-300 delay-150 shadow-md opacity-0 hover:shadow-xl md:h-20 bg-slate-200/50 md:block md:opacity-100 backdrop-blur-md" id="nav-bar">
     <ul class="relative top-0 z-10 flex flex-col flex-wrap gap-2 pt-6 text-black md:flex-row ms-10 md:ms-0 md:justify-center md:items-center">
         
         <div class="tracking-tight transition-all duration-500 ps-5 ease-in-out-sudden hover:tracking-widest group/navicon">
