@@ -61,12 +61,12 @@
                 <h1 class="font-extrabold uppercase transition text-7xl lg:text-8xl xl:text-9xl group-hover:text-orange-500">Jeanne Francis Rivas</h1>
             </div>
             <div class="flex overflow-hidden">
-                <p class="pt-2 text-base whitespace-nowrap "> IT • Programmer • Developer • Troubleshooter • Learner </p>
+                <p class="pt-2 text-base "> IT • Programmer • Developer • Troubleshooter • Learner </p>
             </div>
         </div>
         
         <div class="relative object-cover w-full h-full mt-6 overflow-hidden basis-1/2 md:w-1/2 rounded-t-md md:rounded-e-md md:rounded-s-none">
-            <img src="/assets/HeadMe.webp" alt="" class="object-cover object-center w-full h-full transition-all duration-500 md:h-1/2 grayscale group-hover:scale-110 colored group-hover:grayscale-0 ">
+            <img src="/assets/HeadMe.webp" alt="" class="object-cover object-center w-full h-full transition-all duration-500 md:h-1/2 grayscale group-hover:scale-110 colored group-hover:grayscale-0">
         </div>
     </div>
 </header>
@@ -105,7 +105,7 @@
                     </div>
                 </div>
                 
-                <div class="flex flex-col p-5 border-2 border-orange-200 rounded-md md:col-span-3 border-spacing-1 snap-start"" >
+                <div class="flex flex-col p-5 border-2 rounded-md border-accent md:col-span-3 border-spacing-1 snap-start"" >
                     <h4 class="font-semibold">CURRENTLY LEARNING</h4>
                     <div class="flex flex-col w-full gap-5 my-2 md:flex-row place-content-center flex-nowrap md:flex-wrap">
                         @foreach ($learning as $subkey => $subvalue)

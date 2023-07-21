@@ -25,7 +25,7 @@
         </div>
         <div class="relative h-12">
             <a href="{{ $workLink }}" target="_blank" class="absolute bottom-0">
-                <button class="bg-orange-500 h-7 w-24 rounded-md text-white transition-colors duration-500 uppercase text-xs hover:bg-orange-600 after:content-['\00a0>'] ">Go to site</button>
+                <button class="bg-accent h-7 w-24 rounded-md text-white transition-colors duration-500 uppercase text-xs hover:bg-orange-600 after:content-['\00a0>'] ">Go to site</button>
             </a>
             
         </div>
