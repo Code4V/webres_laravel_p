@@ -19,6 +19,10 @@ module.exports = {
       },
       transitionTimingFunction: {
         'in-out-sudden': 'cubic-bezier(.68,-0.55,.27,1.55)'
+      },
+      colors:
+      {
+          'accent': '#3c82b4'
       }
     },
     fontFamily: {
