@@ -4,6 +4,7 @@
                             "JS" => "hover:bg-yellow-200",
                             "CSS" => "hover:bg-blue-200",
                             "PYTHON" => "hover:bg-yellow-200 text-indigo-900",
+                            "RUBY" => "hover:bg-red-200",
                            ];
 @endphp
 

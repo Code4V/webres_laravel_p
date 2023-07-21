@@ -71,14 +71,14 @@
     </div>
 </header>
 
-<main class="relative flex flex-col justify-center min-h-full mx-auto mt-12 snap-center md:max-w-5xl ">
+<main class="relative flex flex-col justify-center min-h-full mx-auto mt-12 md:max-w-5xl ">
 
     <section class="mx-5 min-h-126 pt-28 snap-top" id="skills">
         <p class="w-full"><span class="block mx-auto my-5 text-2xl font-extrabold w-fit">SKILLS</span></p>
         <div class="w-auto pb-4 overflow-hidden overflow-x-scroll scroll sm:overflow-x-hidden snap-x ">
             <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-3 px-2 h-fill min-h-16 grid-cols-4 w-[96rem] sm:w-auto">
 
-                <div class="flex flex-col flex-wrap p-5 overflow-hidden border-2 rounded-md md:col-span-2 md:row-span-2 h-fill border-spacing-1 snap-center">
+                <div class="flex flex-col flex-wrap p-5 overflow-hidden border-2 rounded-md md:col-span-2 md:row-span-2 h-fill border-spacing-1 snap-start">
                     <h4 class="font-semibold">FRONT-END</h4>
                     <div class="flex flex-col w-full gap-5 my-2 md:flex-row place-content-center flex-nowrap md:flex-wrap">
                         @foreach ($front_end as $subkey => $subvalue)
@@ -87,7 +87,7 @@
                     </div>
                 </div>
             
-                <div class="flex flex-col row-span-1 p-5 overflow-hidden border-2 rounded-md md:row-span-3 lg:row-span-2 border-spacing-1 snap-center"">
+                <div class="flex flex-col row-span-1 p-5 overflow-hidden border-2 rounded-md md:row-span-3 lg:row-span-2 border-spacing-1 snap-start"">
                     <h4 class="font-semibold">DEV OPS</h4>
                     <div class="flex flex-col w-full gap-5 my-2 md:flex-row place-content-center flex-nowrap md:flex-wrap">
                         @foreach ($dev_ops as $subkey => $subvalue)
@@ -96,7 +96,7 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col col-span-1 p-5 border-2 rounded-md md:col-span-2 lg:col-span-3 border-spacing-1 snap-center"">
+                <div class="flex flex-col col-span-1 p-5 border-2 rounded-md md:col-span-2 lg:col-span-3 border-spacing-1 snap-start"">
                     <h4 class="font-semibold">BACK-END</h4>
                     <div class="flex flex-col w-full gap-5 my-2 lg:flex-row place-content-center flex-nowrap lg:flex-wrap">
                         @foreach ($back_end as $subkey => $subvalue)
@@ -105,7 +105,7 @@
                     </div>
                 </div>
                 
-                <div class="flex flex-col p-5 border-2 border-orange-200 rounded-md md:col-span-3 border-spacing-1 snap-center"" >
+                <div class="flex flex-col p-5 border-2 border-orange-200 rounded-md md:col-span-3 border-spacing-1 snap-start"" >
                     <h4 class="font-semibold">CURRENTLY LEARNING</h4>
                     <div class="flex flex-col w-full gap-5 my-2 md:flex-row place-content-center flex-nowrap md:flex-wrap">
                         @foreach ($learning as $subkey => $subvalue)
@@ -121,7 +121,7 @@
         </script>
     </section>
 
-    <section class="mx-5 min-h-fit pt-28 snap-center" id="works">
+    <section class="mx-5 min-h-fit pt-28 snap-start" id="works">
         <p class="w-full"><span class="block mx-auto my-5 text-2xl font-extrabold w-fit">PROJECTS INVOLVED</span></p>
         
         <div class="grid gap-3 md:grid-cols-2">
@@ -132,7 +132,7 @@
 
     </section>
 
-    <section class="min-h-screen mx-5 pt-28 snap-center" id="social">
+    <section class="min-h-screen mx-5 pt-28 snap-start" id="social">
         <span class="text-2xl font-extrabold">MY SOCIAL</span>
     </section>
 </main>
