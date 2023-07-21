@@ -60,7 +60,9 @@
             <div class="">
                 <h1 class="font-extrabold uppercase transition text-7xl lg:text-8xl xl:text-9xl group-hover:text-orange-500">Jeanne Francis Rivas</h1>
             </div>
-            <p class="pt-2 text-base break-words w-fit"> IT • Programmer • Developer • Troubleshooter • Learner • </p>
+            <div class="flex overflow-hidden">
+                <p class="pt-2 text-base whitespace-nowrap "> IT • Programmer • Developer • Troubleshooter • Learner </p>
+            </div>
         </div>
         
         <div class="relative object-cover w-full h-full mt-6 overflow-hidden basis-1/2 md:w-1/2 rounded-t-md md:rounded-e-md md:rounded-s-none">
