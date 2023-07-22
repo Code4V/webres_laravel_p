@@ -22,7 +22,15 @@ module.exports = {
       },
       colors:
       {
-          'accent': '#3c82b4'
+        'accent-600': 'hsl(205, 50%, 37%)',
+        'accent-500': 'hsl(205, 50%, 47%)',
+        'accent-300': 'hsl(205, 50%, 67%)',
+        'accent-200': 'hsl(205, 50%, 80%)',
+        'accent-100': 'hsl(205, 80%, 90%)',
+      },
+      animation: 
+      {
+        'slow-ping': 'ping 1500ms linear infinite'
       }
     },
     fontFamily: {
