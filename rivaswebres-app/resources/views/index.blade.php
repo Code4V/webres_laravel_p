@@ -56,7 +56,7 @@
 
 <header class="flex relative min-w-screen max-h-[120svh] z-10 justify-center items-center snap-top">
     <div class="flex flex-col-reverse md:flex-row relative align-middle content-center border-orange-300 z-10 md:min-h-[80%] group sm:order-none cursor-default mx-7">
-        <div class="basis-1/2 block sticky top-14 w-full md:w-[50%] h-fit md:p-6">
+        <div class="basis-1/2 block sticky top-14 w-full md:w-[50%] h-fit md:p-6 ">
             <div class="">
                 <h1 class="font-extrabold uppercase transition text-7xl lg:text-8xl xl:text-9xl group-hover:text-orange-500">Jeanne Francis Rivas</h1>
             </div>
@@ -105,7 +105,7 @@
                     </div>
                 </div>
                 
-                <div class="flex flex-col p-5 border-2 rounded-md border-accent md:col-span-3 border-spacing-1 snap-start"" >
+                <div class="flex flex-col p-5 border-2 rounded-md border-accent-300 md:col-span-3 border-spacing-1 snap-start"" >
                     <h4 class="font-semibold">CURRENTLY LEARNING</h4>
                     <div class="flex flex-col w-full gap-5 my-2 md:flex-row place-content-center flex-nowrap md:flex-wrap">
                         @foreach ($learning as $subkey => $subvalue)
