@@ -74,13 +74,13 @@
 <main class="relative flex flex-col justify-center min-h-full mx-auto mt-12 md:max-w-5xl ">
 
     <section class="mx-5 min-h-126 pt-28 snap-top" id="skills">
-        <p class="w-full"><span class="block mx-auto my-5 text-2xl font-extrabold w-fit">SKILLS</span></p>
+        <p><span class="block mx-auto my-5 text-2xl font-extrabold w-fit">SKILLS</span></p>
         <div class="w-auto pb-4 overflow-hidden overflow-x-scroll scroll sm:overflow-x-hidden snap-x ">
             <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-3 px-2 h-fill min-h-16 grid-cols-4 w-[96rem] sm:w-auto">
 
                 <div class="flex flex-col flex-wrap p-5 overflow-hidden border-2 rounded-md md:col-span-2 md:row-span-2 h-fill border-spacing-1 snap-start">
                     <h4 class="font-semibold">FRONT-END</h4>
-                    <div class="flex flex-col w-full gap-5 my-2 md:flex-row place-content-center flex-nowrap md:flex-wrap">
+                    <div class="flex flex-col w-full gap-5 my-2 md:flex-row flex-nowrap md:flex-wrap">
                         @foreach ($front_end as $subkey => $subvalue)
                         <x-skill :skillName="$subvalue['skillName']" :skillPercent="$subvalue['skillPercent']" :skillIcon="$subvalue['skillIcon']"/>
                         @endforeach
@@ -89,7 +89,7 @@
             
                 <div class="flex flex-col row-span-1 p-5 overflow-hidden border-2 rounded-md md:row-span-3 lg:row-span-2 border-spacing-1 snap-start"">
                     <h4 class="font-semibold">DEV OPS</h4>
-                    <div class="flex flex-col w-full gap-5 my-2 md:flex-row place-content-center flex-nowrap md:flex-wrap">
+                    <div class="flex flex-col w-full gap-5 my-2 md:flex-row flex-nowrap md:flex-wrap">
                         @foreach ($dev_ops as $subkey => $subvalue)
                         <x-skill :skillName=" $subvalue['skillName'] " :skillPercent=" $subvalue['skillPercent'] " :skillIcon=" $subvalue['skillIcon'] "/>
                         @endforeach
@@ -122,7 +122,7 @@
     </section>
 
     <section class="mx-5 min-h-fit pt-28 snap-start" id="works">
-        <p class="w-full"><span class="block mx-auto my-5 text-2xl font-extrabold w-fit">PROJECTS INVOLVED</span></p>
+        <p><span class="block mx-auto my-5 text-2xl font-extrabold w-fit">PROJECTS INVOLVED</span></p>
         
         <div class="grid gap-3 md:grid-cols-2">
             @foreach ($works as $key => $work)
@@ -133,7 +133,14 @@
     </section>
 
     <section class="min-h-screen mx-5 pt-28 snap-start" id="social">
-        <span class="text-2xl font-extrabold">MY SOCIAL</span>
+        <p><span class="block mx-auto my-5 text-2xl font-extrabold w-fit">FIND ME ON</span></p>
+        <div class="grid grid-cols-3">
+            <div class="overflow-hidden border-2 border-black rounded-md w-fit">
+                <div class="inline-block px-2 py-0.5 bg-black"><i class="invert fa-brands fa-github"></i></div>
+                <div class="inline pe-2"><span>Github</span></div>
+            </div> 
+        </div>
+
     </section>
 </main>
 @include('partials.__footer')
