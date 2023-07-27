@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/uvrfocer/public_html/webres.lakbaysabayan.com/
+    - /bin/cp -R /home/uvrfocer/repositories/webres_laravel_p/* $DEPLOYPATH
