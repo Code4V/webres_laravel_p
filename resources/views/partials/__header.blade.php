@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Rivas Web Resume">
     <meta property="og:description" content="Take a look at Rivas' fantastic Web Resume">
-
+    <link rel="icon" type="image/png" href="/assets/ResumeLogo.png"/>
     <title>{{$title}}</title>
     @vite('resources/css/app.css')
 
     <script src="https://kit.fontawesome.com/7846b9013f.js" crossorigin="anonymous"></script>
 
 </head>
-<body class="text-base bg-slate-100 font-pops snap-y snap-mandatory scroll">
+<body class="text-sm md:text-md bg-slate-100 font-pops snap-y snap-mandatory scroll">

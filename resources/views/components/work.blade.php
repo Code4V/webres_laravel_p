@@ -20,7 +20,7 @@
             @endforeach
         </div>
         <div class="mt-2 grow">  
-            <h4 class="text-2xl font-medium text-orange-500"> {{ $workTitle }} </h4>
+            <h4 class="text-2xl font-medium text-orange-600"> {{ $workTitle }} </h4>
             <p class="mb-5 leading-tight">{{ $workDescription }}</p>
         </div>
         <div class="relative h-12">

@@ -19,7 +19,7 @@
         </svg>
 
         <span>by</span>  
-        <span class="font-extrabold cursor-default md:basis-28">CODE<span class="text-orange-500 transition duration-300 hover:text-accent-500">4</span>V</span>
+        <span class="font-extrabold cursor-default md:basis-28">CODE<span class="text-orange-600 transition duration-300 hover:text-accent-500">4</span>V</span>
     </div>
 </footer>
 
