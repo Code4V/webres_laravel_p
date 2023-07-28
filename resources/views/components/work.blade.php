@@ -34,7 +34,7 @@
     <div class="w-full sm:w-[30%] order-first sm:order-none sm:ms-2 rounded-md bg-orange-100/50 overflow-hidden" >
         <picture>
             <source media="(min-width: 640px)" srcset="assets/{{ $workImage['large_screen'] }}">
-            <img src="/assets/{{ $workImage['small_screen'] }}" alt="" class="object-cover w-full transition-transform duration-500 translate-x-7 sm:h-full ease-in-out-sudden sm:object-left hover:scale-110 hover:translate-x-0">
+            <img src="/assets/{{ $workImage['small_screen'] }}" alt="" class="object-cover w-full transition-transform duration-500 translate-x-0 md:translate-x-7 sm:h-full ease-in-out-sudden sm:object-left hover:scale-110 hover:translate-x-0">
         </picture>
     </div>
 </div>

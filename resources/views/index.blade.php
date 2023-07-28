@@ -4,7 +4,7 @@
 
 <header class="flex relative min-w-screen max-h-[120svh] z-10 justify-center items-center snap-top">
     <div class="flex flex-col-reverse md:flex-row relative align-middle content-center border-orange-300 z-10 md:min-h-[80%] group sm:order-none cursor-default mx-7">
-        <div class="basis-1/2 block sticky top-14 w-full md:w-[50%] h-fit md:p-6 ">
+        <div class="basis-1/2 block sticky top-14 w-full md:w-[50%] h-fit md:px-6 md:pt-6">
             <div class="">
                 <h1 class="font-extrabold uppercase transition text-7xl lg:text-8xl xl:text-9xl group-hover:text-orange-600">Jeanne Francis Rivas</h1>
             </div>
@@ -14,7 +14,7 @@
         </div>
         
         <div class="relative object-cover w-full h-full mt-6 overflow-hidden basis-1/2 md:w-1/2 rounded-t-md md:rounded-e-md md:rounded-s-none">
-            <img src="/assets/HeadMe.webp" alt="" class="object-cover object-center w-full h-full transition-all duration-500 shadow-sm md:h-1/2 grayscale group-hover:scale-110 colored group-hover:grayscale-0">
+            <img src="/assets/HeadMe.webp" alt="Rivas Teaching C++" class="object-cover object-center w-full h-full transition-all duration-500 shadow-sm md:h-1/2 grayscale group-hover:scale-110 colored group-hover:grayscale-0">
         </div>
     </div>
 </header>
@@ -65,7 +65,7 @@
         </div>
 
     </section>
-
+   
     <section class="mx-5 min-h-fit pt-28 snap-start" id="works">
         <h2><span class="block mx-auto my-5 text-2xl font-extrabold w-fit">PROJECTS INVOLVED</span></h2>
         
@@ -83,7 +83,14 @@
             @foreach ($experiences as $key => $experience)
                 <x-experience :workYear="$experience['workYear']" :workCompany="$experience['workCompany']" :workDescription="$experience['workDescription']" :workPosition="$experience['workPosition']"/>
             @endforeach
+
+            <div class="flex justify-center mt-8">
+                <p>My professional work continues</p>
+            </div>
         </div>
+        
     </section>
+
+    
 </main>
 @include('partials.__footer')

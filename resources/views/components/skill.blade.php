@@ -13,16 +13,15 @@
             <span class="text-3xl font-medium leading-none text-orange-600 transition-all duration-300 ease-in-out delay-300 group-hover/skill:translate-y-28">
                 {{ $skillPercent }}%
             </span>
-            <div class="transition-all duration-300 ease-in-out delay-300 ms-1 place-self-end group-hover/skill:-translate-x-16">         
+            <div class="transition-all duration-300 ease-in-out delay-300 ms-1 place-self-start group-hover/skill:-translate-x-16">         
                 <span class="font-normal">
                     Proficiency
                 </span>
-                
             </div>
         </div>
         
-        <div class="w-0 group-hover/skill:w-full delay-300 overflow-hidden bg-gray-200 rounded-full h-1.5 transition-all ease-in-out-sudden duration-300 dark:bg-gray-700/25 group-hover/skill:h-5">
-            <div class="bg-orange-600 h-1.5 transition-all leading-tight rounded-full ease-in-out-sudden duration-300 text-center group-hover/skill:h-5 overflow-hidden text-blue-100 text-opacity-0 group-hover/skill:text-opacity-100" style="width: {{ $skillPercent }}%">{{ $skillPercent }}%</div>
+        <div class="w-0 group-hover/skill:w-full -translate-y-2.5 delay-300 overflow-hidden bg-gray-200 rounded-full h-1.5 transition-all ease-in-out-sudden duration-300 dark:bg-gray-700/25 group-hover/skill:h-5">
+            <div class="bg-orange-600 h-1.5 transition-all leading-normal rounded-full ease-in-out-sudden duration-300 text-center group-hover/skill:h-5 overflow-hidden text-blue-100 text-opacity-0 group-hover/skill:text-opacity-100" style="width: {{ $skillPercent }}%">{{ $skillPercent }}%</div>
         </div>
     </div>
 </div>

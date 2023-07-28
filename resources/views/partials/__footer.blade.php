@@ -1,9 +1,7 @@
 <footer class="bottom-0 block w-full h-auto bg-slate-200">
-    <div class="flex items-center justify-center gap-3 py-1 text-xs">
-        <span class="font-red">Made with Love and Laravel</span>
+    <div class="flex items-center justify-center gap-3 py-1 text-xs font-red">
+        <span class="">Made with Love and Laravel &plus; Tailwind</span>
         <i class="text-2xl font-bold text-red-500 fa-brands fa-laravel hover:animate-pulse""></i>
-        
-        <span class="font-red">Plus Tailwind</span>
         <svg class="w-7" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 122.88 73.29">
             <defs>
                 <style>

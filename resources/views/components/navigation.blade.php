@@ -17,7 +17,7 @@
             </li>
     
             <li class=" md:basis-28 transition z-50 font-normal hover:font-extrabold hover:scale-105 hover:text-orange-600 hover:before:content-['>'] target:before:content-['>'] before:transition before:duration-500 before:opacity-0 hover:before:opacity-100 before:text-5xl before:-left-4 before:absolute pt-4 md:pt-0 group md:before:text-base md:before:left-0">
-                <a href="/#social" class="px-3 text-5xl transition duration-300 cursor-default group-hover:underline md:text-base">SOCIALS</a>
+                <a href="/#social" class="px-3 text-5xl transition duration-300 cursor-default group-hover:underline md:text-base">EXPERIENCE</a>
             </li>
             <li class=" md:basis-28 transition z-50 font-normal hover:font-extrabold hover:scale-105 hover:text-orange-600 hover:before:content-['>'] target:before:content-['>'] before:transition before:duration-500 before:opacity-0 hover:before:opacity-100 before:text-5xl before:-left-4 before:absolute pt-4 md:pt-0 group md:before:text-base md:before:left-0">
                 <a href="/contact" class="px-3 text-5xl transition duration-300 cursor-default group-hover:underline md:text-base">CONTACT</a>
@@ -25,8 +25,8 @@
         </ul>
         
     </div>
-    <div class="absolute bottom-0 hidden w-full h-1 overflow-hidden transition-all duration-300 bg-gray-200 md:block ease-in-out-sudden dark:bg-gray-700/25 basis-24">
-        <div class="h-1 overflow-hidden text-center text-blue-100 transition-all duration-300 ease-out bg-accent-500" style="width: 0" id="navprogress"></div>
+    <div class="absolute bottom-0 hidden w-full h-1 overflow-hidden duration-300 bg-gray-200 transition-color md:block ease-in-out-sudden dark:bg-gray-700/25 basis-24">
+        <div class="h-1 overflow-hidden text-center text-blue-100 duration-300 ease-out transition-color bg-accent-500" style="width: 0" id="navprogress"></div>
     </div>
 </nav>
 
@@ -35,7 +35,7 @@
 </div>
 
 <script>
-    const navLinks = document.querySelectorAll("div>li>a");
+    const navLinks = document.querySelectorAll("ul>li>a");
     const nav = document.querySelector("nav");
     const navProgress = document.querySelector("#navprogress");
     
@@ -50,7 +50,7 @@
 
             
                 
-        if(progress == 100)
+        if(progress === 100)
         {
             navProgress.classList.add("bg-orange-600")
             navProgress.classList.remove("bg-accent-500")
@@ -77,6 +77,6 @@
     };
     
     navLinks.forEach(element => {
-        element.addEventListener("click", toggleSide());    
+        element.addEventListener("click", toggleSide);    
     });
 </script>

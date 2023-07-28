@@ -10,7 +10,8 @@ class UserController extends Controller
     public function index(){
 
     $information = [  
-                "skills" => [                    
+                "skills" => 
+                [                    
                     "front_end" => 
                         [
                             ["skillName"=>"html","skillPercent"=>85, "skillIcon"=>"fa-html5"],
