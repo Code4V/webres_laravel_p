@@ -19,9 +19,9 @@
             <li class=" md:basis-28 transition z-50 font-normal hover:font-extrabold hover:scale-105 hover:text-orange-600 hover:before:content-['>'] target:before:content-['>'] before:transition before:duration-500 before:opacity-0 hover:before:opacity-100 before:text-5xl before:-left-4 before:absolute pt-4 md:pt-0 group md:before:text-base md:before:left-0">
                 <a href="/#social" class="px-3 text-5xl transition duration-300 cursor-default group-hover:underline md:text-base">EXPERIENCE</a>
             </li>
-            <li class=" md:basis-28 transition z-50 font-normal hover:font-extrabold hover:scale-105 hover:text-orange-600 hover:before:content-['>'] target:before:content-['>'] before:transition before:duration-500 before:opacity-0 hover:before:opacity-100 before:text-5xl before:-left-4 before:absolute pt-4 md:pt-0 group md:before:text-base md:before:left-0">
+            <!-- <li class=" md:basis-28 transition z-50 font-normal hover:font-extrabold hover:scale-105 hover:text-orange-600 hover:before:content-['>'] target:before:content-['>'] before:transition before:duration-500 before:opacity-0 hover:before:opacity-100 before:text-5xl before:-left-4 before:absolute pt-4 md:pt-0 group md:before:text-base md:before:left-0">
                 <a href="/contact" class="px-3 text-5xl transition duration-300 cursor-default group-hover:underline md:text-base">CONTACT</a>
-            </li>
+            </li> -->
         </ul>
         
     </div>

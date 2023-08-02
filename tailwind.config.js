@@ -31,6 +31,10 @@ module.exports = {
       animation: 
       {
         'slow-ping': 'ping 1500ms linear infinite'
+      },
+      backgroundImage:
+      {
+        'base-texture': "url('../../public/assets/BackgroundPattern.webp')"
       }
     },
     fontFamily: {

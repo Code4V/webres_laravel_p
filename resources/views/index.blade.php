@@ -21,7 +21,7 @@
 
 <main class="relative flex flex-col justify-center min-h-full mx-auto mt-12 md:max-w-5xl ">
 
-    <section class="mx-5 min-h-126 pt-28 snap-top" id="skills">
+    <section class="min-h-screen mx-5 pt-28 snap-top" id="skills">
         <h2><span class="block mx-auto my-5 text-2xl font-extrabold w-fit">SKILLS</span></h2>
         <div class="w-auto pb-4 overflow-hidden overflow-x-scroll scroll sm:overflow-x-hidden snap-x ">
             <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-3 px-2 h-fill min-h-16 grid-cols-4 w-[96rem] sm:w-auto">
@@ -66,7 +66,7 @@
 
     </section>
    
-    <section class="mx-5 min-h-fit pt-28 snap-start" id="works">
+    <section class="min-h-screen mx-5 pt-28 snap-start" id="works">
         <h2><span class="block mx-auto my-5 text-2xl font-extrabold w-fit">PROJECTS INVOLVED</span></h2>
         
         <div class="grid gap-3 md:grid-cols-2">
@@ -77,7 +77,7 @@
 
     </section>
 
-    <section class="min-h-screen mx-5 pt-28 snap-start" id="social">
+    <section class="min-h-screen mx-5 pt-28 snap-start " id="social">
         <h2><span class="block mx-auto my-5 text-2xl font-extrabold w-fit">WORK EXPERIENCE</span></h2>
         <div class="grid">
             @foreach ($experiences as $key => $experience)
