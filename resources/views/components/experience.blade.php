@@ -17,7 +17,7 @@
         <div class="mt-2">
             @foreach ($workPosition as $key => $val)
 
-            <span> {{ $val }} </span>
+            <span class="italic pe-2">  {{ $val }} </span>
 
             @endforeach
         </div>

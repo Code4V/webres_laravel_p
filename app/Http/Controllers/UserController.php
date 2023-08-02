@@ -76,7 +76,7 @@ class UserController extends Controller
                     [
                         "workCompany" => "Erovoutika",
                         "workDescription" => "A company specialized in Robotics and Certifications",
-                        "workPosition" => ["Full-Stack Developer", "Project Manager"],
+                        "workPosition" => ["Full-Stack Developer", "Project Manager", "Instructor"],
                         "workYear" => [2023]
                     ]
                 ]
