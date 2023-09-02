@@ -11,6 +11,14 @@
             <div class="flex overflow-hidden">
                 <p class="pt-2"> IT • Programmer • Developer • Troubleshooter • Learner </p>
             </div>
+            <div class="mt-4 overflow-hidden">
+                <div class="flex gap-2 w-fit">
+                    @foreach ($socials as $social)
+                        <x-link :link="$social['socialLink']" :linkname="$social['socialName']" :icon="$social['socialIcon']"/>
+                    @endforeach
+                
+                </div>
+            </div>
         </div>
         
         <div class="relative object-cover w-full h-full mt-6 overflow-hidden basis-1/2 md:w-1/2 rounded-t-md md:rounded-e-md md:rounded-s-none">
@@ -84,8 +92,8 @@
                 <x-experience :workYear="$experience['workYear']" :workCompany="$experience['workCompany']" :workDescription="$experience['workDescription']" :workPosition="$experience['workPosition']"/>
             @endforeach
 
-            <div class="flex justify-center mt-8">
-                <p>My professional work continues</p>
+            <div class="flex justify-center mt-16">
+                <p class="italic uppercase">Thus, my career continues</p>
             </div>
         </div>
         
