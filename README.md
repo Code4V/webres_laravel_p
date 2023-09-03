@@ -1,4 +1,4 @@
-# What's up!
+# What's up! Welcome to the Resume
 
 ![Gif Preview](/public/assets/README_GIF.gif)
 
@@ -11,22 +11,22 @@ Additionally, I used Tailwindcss as my styling for this personal website. :heart
 
 Preview: 
 
-> ## About Me
+## About Me
 > A short description on what I am and what I do, with Links to my socials! 
 
 ![About Me Part of the Resume](/public/assets/README_ABOUT.jpg)
 
-> ## Skills 
+## Skills 
 > Displays my profiency on skills that I learned throughout my experience
 
 ![Skills Part of the Resume](/public/assets/README_SKILLS.jpg)
 
-> ## Projects
+## Projects
 > Lists of projects that I was involved on, mostly during my academic years 
 
 ![Project Part of the Resume](/public/assets/README_WORKS.jpg)
 
-> ## Experience
+## Experience
 > My working experiences thus far! 
 
 ![Experience Part of the Resume](/public/assets/README_EXPERIENCE.jpg)
